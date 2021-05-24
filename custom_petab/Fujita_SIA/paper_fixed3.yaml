@@ -1,0 +1,13 @@
+format_version: 1
+parameter_file: parameters/fixed3.tsv
+problems:
+- condition_files:
+  - ../../Benchmark-Models-PEtab/Benchmark-Models/Fujita_SciSignal2010/experimentalCondition_Fujita_SciSignal2010.tsv
+  measurement_files:
+  - measurements/without_scaling_pS6.tsv
+  observable_files:
+  - ../../Benchmark-Models-PEtab/Benchmark-Models/Fujita_SciSignal2010/observables_Fujita_SciSignal2010.tsv
+  sbml_files:
+  - models/paper.xml
+  visualization_files:
+  - ../../Benchmark-Models-PEtab/Benchmark-Models/Fujita_SciSignal2010/visualizationSpecification_Fujita_SciSignal2010.tsv

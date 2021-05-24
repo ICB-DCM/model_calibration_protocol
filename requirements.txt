@@ -1,0 +1,9 @@
+amici
+dill
+fides
+matplotlib
+more-itertools
+numpy
+pandas
+petab
+https://github.com/ICB-DCM/pyPESTO/archive/develop.zip
