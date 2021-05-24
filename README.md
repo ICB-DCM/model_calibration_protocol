@@ -3,9 +3,9 @@ This repository contains examples of model calibration.
 
 Step 1 of the protocol, structural identifiability and observability analysis, is performed in MATLAB. The folder 'step1_structural_identifiability' contains MATLAB Live Scripts that reproduce the results reported in the paper. More details are provided in the README file included in the aforementioned folder.
 
-The remaining steps can be reproduced with either the Dockerfile or the Jupyter notebooks. The Dockerfile requires basic command-line experience but handles most dependencies, so is recommended over the Jupter notebooks. Both the Jupyter notebooks and the Dockerfile can be used to reproduce the same results.
+The remaining steps can be reproduced with either the Dockerfile or the Jupyter notebook. The Dockerfile requires basic command-line experience but handles most dependencies, so is recommended over the Jupyter notebook. Furthermore, the Jupyter notebook is setup to reproduce a simplified example, to reduce computation time.
 
-The following sections are related to usage of the Dockerfile to reproduce the example results, except for the last section, which describes usage of the Jupyter notebooks as an alternative to the Dockerfile.
+The following sections are related to usage of the Dockerfile to reproduce the example results, except for the last section, which describes usage of the Jupyter notebook as an alternative to the Dockerfile.
 
 For anyone unfamiliar with Python 3, a short tutorial on this subject is recommended.
 
@@ -31,18 +31,18 @@ The Docker image contains most dependencies required from STEP 3 onwards.
 Usage of the Docker image involves command-line programs.
 1. Download or clone this repository.
 ```bash
-git clone https://github.com/dilpath/model_calibration_protocol_draft2
+git clone https://github.com/ICB-DCM/model_calibration_protocol_preprint
 ```
 
 2. Use the `Dockerfile` to build the Docker image.
 ```bash
-docker build -t calibration-pipeline model_calibration_protocol_draft2
+docker build -t calibration-pipeline model_calibration_protocol_preprint
 ```
 NB: messages related to "debconf" and "Dialog" were output multiple times but ignored without issue by the authors.
 
 3. Start a Docker container with the Docker image.
 ```bash
-docker run -it --workdir /home/user/model_calibration_protocol_draft2 --name calibration-pipeline_container1 calibration-pipeline
+docker run -it --workdir /home/user/model_calibration_protocol_preprint --name calibration-pipeline_container1 calibration-pipeline
 ```
 
 # Scripts
@@ -67,32 +67,25 @@ The settings directory contains scripts that specify settings that greatly affec
 
 - Results can be copied to your host machine.
 ```bash
-docker cp calibration-pipeline_container1:/home/user/model_calibration_protocol_draft2/output/. model_calibration_protocol_draft2/output
+docker cp calibration-pipeline_container1:/home/user/model_calibration_protocol_preprint/output/. model_calibration_protocol_preprint/output
 ```
 
-# Jupyter notebooks
+# Jupyter notebook
 - A short tutorial on Jupyter notebooks is recommended for anyone unfamiliar.
-- Prerequisites for the [AMICI](https://github.com/AMICI-dev/AMICI) tool should be installed.
+- Prerequisites for the [AMICI](https://github.com/AMICI-dev/AMICI) tool should be [installed](https://amici.readthedocs.io/en/latest/python_installation.html).
 - An installation of Python 3 is also required. The examples have been tested with Python versions 3.7 and 3.8. Use of a Python 3 virtual environment to manage Python dependencies is recommended but not necessary.
 - Python dependencies are specified in the `requirements.txt` file. The file can be used to automatically install the dependencies into your Python environment.
 ```bash
+pip3 install wheel
 pip3 install -r requirements.txt
 ```
 - Notebooks can be run by starting a Jupyter Notebook server. For example:
-  1. go to the `notebooks` directory of this repository in your browser;
+  1. go to the `notebooks` directory of your local copy of this repository in your terminal;
   2. launch a notebook server with `jupyter-notebook`; then
-  3. a webpage should open in your web browser with links to the notebooks.
+  3. a webpage should open in your web browser with a link to the notebook.
 
-# TODOs FIXME
-- ~~remove private deploy key~~
-- ~~remove `###REMOVE`s of `Dockerfile`~~
-- ~~`TODO`s in above instructions~~
-- ~~change Benchmark-Models submodule on github to a specific commit~~
-  - now using subtrees
-- ~~change github to public repo in Dockerfile~~
-- ~~move Dockerfile pip3 installs to requirements.txt~~
+# TODO
 - change package versions to latest
 - change repo names here and in Dockerfile to final repo
-- fix possible global optima method
 - add link to the paper (arxiv, initially)
 - switch from test-data to main branch of Benchmark Models

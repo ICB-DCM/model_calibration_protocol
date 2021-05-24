@@ -20,8 +20,8 @@ RUN sudo apt-get install -y libatlas-base-dev swig libhdf5-serial-dev
 
 # Clone the tutorial git repository.
 RUN sudo apt-get install -y git
-RUN git clone --recurse-submodules https://github.com/dilpath/model_calibration_protocol_draft2
+RUN git clone --recurse-submodules https://github.com/ICB-DCM/model_calibration_protocol_preprint
 # Setup the Python environment.
 RUN echo 'export PATH=/home/user/.local/bin:$PATH' >> /home/user/.bashrc
 ENV PATH="/home/user/.local/bin:$PATH"
-RUN pip3 install -r model_calibration_protocol_draft2/requirements.txt
+RUN pip3 install -r model_calibration_protocol_preprint/requirements.txt

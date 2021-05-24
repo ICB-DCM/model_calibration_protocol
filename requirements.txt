@@ -6,4 +6,5 @@ more-itertools
 numpy
 pandas
 petab
+notebook
 https://github.com/ICB-DCM/pyPESTO/archive/develop.zip
