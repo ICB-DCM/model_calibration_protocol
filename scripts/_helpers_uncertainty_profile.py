@@ -9,6 +9,6 @@ from _helpers_paths import (
 def load_profile_result(
         pypesto_problem: pypesto.Problem,
 ):
-    result = read_result(profile_output_path(), profile=True)
+    result = read_result(profile_output_path(), optimize=True, profile=True)
     result.problem = pypesto_problem
     return result

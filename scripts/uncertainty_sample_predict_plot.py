@@ -19,8 +19,6 @@ from _helpers import (
 fix_plot_style()
 
 prediction_x, prediction_y = get_predictions()
-prediction_x.compute_summary()
-prediction_y.compute_summary()
 
 credibility_interval_levels = [90, 95, 99]
 
