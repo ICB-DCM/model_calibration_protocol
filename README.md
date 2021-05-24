@@ -46,7 +46,7 @@ docker run -it --workdir /home/user/model_calibration_protocol_preprint --name c
 ```
 
 # Scripts
-The `run.py` programs call scripts in the `scripts` directory. These scripts can be edited but note that, in the current setup, altering these scripts will affect their usage in all `pipeline`s.
+The `run.py` programs call scripts in the `scripts` directory. These scripts can be edited but note that, in the current setup, altering these scripts will affect their usage in all `settings`.
 
 # Settings
 The settings directory contains scripts that specify settings that greatly affect the computational cost of tasks. Included are settings files that specify reduced computational costs, which can be used to quickly test the pipeline; however, results will be poor (for example, insufficient optimization starts or unconverged MCMC chains).
@@ -59,7 +59,7 @@ The settings directory contains scripts that specify settings that greatly affec
 ## Run a calibration task
 1. (Optional) Customize the task.
     - Edit model-specific settings in the `settings` directory.
-    - Edit task logic directly in the `scripts` directory.
+    - Edit task commands directly in the `scripts` directory.
 2. Execute the task.
     1. Run: `python3 run.py`
     2. Select the setting to use.
