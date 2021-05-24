@@ -55,6 +55,7 @@ The settings directory contains scripts that specify settings that greatly affec
 - Short tutorials on the Linux command-line or Docker usage is recommended for anyone unfamiliar.
 - Basic competence with a command-line text editor (e.g. `nano` or `vim`) can be useful to quickly adjust scripts and settings.
 - Alternatively, the Docker volume can be used to transfer files to the host machine for editing.
+- The `Bruno_JExpBot2016_quick` setting is provided as a way to quickly try out the pipeline, and specifies simplified calibration tasks. Typical computation time to run all tasks in this setting on a personal laptop should be within 2 hours.
 
 ## Run a calibration task
 1. (Optional) Customize the task.
