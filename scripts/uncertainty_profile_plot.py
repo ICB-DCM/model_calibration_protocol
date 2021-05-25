@@ -13,6 +13,7 @@ from _helpers import (
     increase_ax_ticklabels,
     remove_ax_labels,
     plot_ax_only,
+    color_global_optimum,
 )
 
 fix_plot_style()
@@ -20,7 +21,7 @@ fix_plot_style()
 profiles_plot_output_path = Path(plot_output_path('profiles'))
 profiles_plot_output_path.mkdir(parents=True, exist_ok=True)
 
-mle_color = to_rgba('mediumseagreen')
+mle_color = to_rgba(color_global_optimum)
 profile_color = to_rgba('black')
 confidence_level = 0.95
 

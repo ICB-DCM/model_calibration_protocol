@@ -32,7 +32,7 @@ petab_yaml_paths = {
     6: custom_petab_fujita / 'paper_fixed3.yaml',
 }
 
-setting_id = f'Fujita_SciSignal2010_{petab_choice}'
+setting_id = f'Fujita_SciSignal2010_model_{petab_choice}'
 model_name = setting_id
 
 petab_yaml_path = str(
