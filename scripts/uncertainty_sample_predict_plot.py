@@ -61,7 +61,7 @@ for index, (condition_id, state_id) in enumerate(
     plt.savefig(str(predict_states_plot_output_path / f'{plot_id}.svg'))
 
 # =========================================================================== #
-# Plot state predictions
+# Plot observable predictions
 
 print(
     'Plotting prediction profiles of sampling, by observable, grouped by '

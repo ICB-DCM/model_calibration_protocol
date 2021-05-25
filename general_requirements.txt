@@ -1,0 +1,10 @@
+amici
+dill
+fides
+matplotlib
+more-itertools
+numpy
+pandas
+petab
+pypesto
+notebook

@@ -75,18 +75,17 @@ docker cp calibration-pipeline_container1:/home/user/model_calibration_protocol_
 - A short tutorial on Jupyter notebooks is recommended for anyone unfamiliar.
 - Prerequisites for the [AMICI](https://github.com/AMICI-dev/AMICI) tool should be [installed](https://amici.readthedocs.io/en/latest/python_installation.html).
 - An installation of Python 3 is also required. The examples have been tested with Python versions 3.7 and 3.8. Use of a Python 3 virtual environment to manage Python dependencies is recommended but not necessary.
-- Python dependencies are specified in the `requirements.txt` file. The file can be used to automatically install the dependencies into your Python environment.
+- Python environment dependencies are specified in the `requirements.txt` file, as specific package versions to increase reproducibility. This file can be used to automatically install the dependencies into your Python environment. Requirements without specific version are also provided in `general_requirements.txt`, which may be sufficient to use this protocol pipeline with the latest versions of tools.
 ```bash
 pip3 install wheel
 pip3 install -r requirements.txt
 ```
 - Notebooks can be run by starting a Jupyter Notebook server. For example:
-  1. go to the `notebooks` directory of your local copy of this repository in your terminal;
+  1. go to the `notebooks` directory of your local copy of this repository in your terminal; then
   2. launch a notebook server with `jupyter-notebook`; then
   3. a webpage should open in your web browser with a link to the notebook.
 
 # TODO
-- change package versions to latest
 - change repo names here and in Dockerfile to final repo
 - add link to the paper (arxiv, initially)
 - switch from test-data to main branch of Benchmark Models
