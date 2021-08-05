@@ -1,5 +1,5 @@
 # Model calibration protocol examples
-This repository contains examples of model calibration.
+This repository contains examples of model calibration. It is a supplement to the following preprint ( https://arxiv.org/abs/2105.12008 ): Villaverde, Alejandro F., Dilan Pathirana, Fabian Fröhlich, Jan Hasenauer, and Julio R. Banga. "A protocol for dynamic model calibration." arXiv preprint arXiv:2105.12008 (2021).
 
 Step 1 of the protocol, structural identifiability and observability analysis, is performed in MATLAB. The folder 'step1_structural_identifiability' contains MATLAB Live Scripts that reproduce the results reported in the paper. More details are provided in the README file included in the aforementioned folder.
 
@@ -87,5 +87,5 @@ pip3 install -r requirements.txt
 
 # TODO
 - change repo names here and in Dockerfile to final repo
-- add link to the paper (arxiv, initially)
+- update link to the paper (currently arxiv)
 - switch from test-data to main branch of Benchmark Models
