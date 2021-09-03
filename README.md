@@ -31,18 +31,18 @@ The Docker image contains most dependencies required from STEP 3 onwards.
 Usage of the Docker image involves command-line programs.
 1. Download or clone this repository.
 ```bash
-git clone https://github.com/ICB-DCM/model_calibration_protocol_preprint
+git clone https://github.com/ICB-DCM/model_calibration_protocol
 ```
 
 2. Use the `Dockerfile` to build the Docker image.
 ```bash
-docker build -t calibration-pipeline model_calibration_protocol_preprint
+docker build -t calibration-pipeline model_calibration_protocol
 ```
 NB: messages related to "debconf" and "Dialog" were output multiple times but ignored without issue by the authors.
 
 3. Start a Docker container with the Docker image.
 ```bash
-docker run -it --workdir /home/user/model_calibration_protocol_preprint --name calibration-pipeline_container1 calibration-pipeline
+docker run -it --workdir /home/user/model_calibration_protocol --name calibration-pipeline_container1 calibration-pipeline
 ```
 
 # Scripts
@@ -68,7 +68,7 @@ The settings directory contains scripts that specify settings that greatly affec
 
 - Results can be copied to your host machine.
 ```bash
-docker cp calibration-pipeline_container1:/home/user/model_calibration_protocol_preprint/output/. model_calibration_protocol_preprint/output
+docker cp calibration-pipeline_container1:/home/user/model_calibration_protocol/output/. model_calibration_protocol/output
 ```
 
 # Jupyter notebook
