@@ -86,6 +86,4 @@ pip3 install -r requirements.txt
   3. a webpage should open in your web browser with a link to the notebook.
 
 # TODO
-- change repo names here and in Dockerfile to final repo
 - update link to the paper (currently arxiv)
-- switch from test-data to main branch of Benchmark Models
