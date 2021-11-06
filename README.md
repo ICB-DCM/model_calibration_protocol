@@ -1,5 +1,6 @@
 # Model calibration protocol examples
-This repository contains examples of model calibration. It is a supplement to the following preprint ( https://arxiv.org/abs/2105.12008 ): Villaverde, Alejandro F., Dilan Pathirana, Fabian Fröhlich, Jan Hasenauer, and Julio R. Banga. "A protocol for dynamic model calibration." arXiv preprint arXiv:2105.12008 (2021).
+This repository contains examples of model calibration. It is a supplement to the following article.
+> Alejandro F Villaverde, Dilan Pathirana, Fabian Fröhlich, Jan Hasenauer, Julio R Banga, A protocol for dynamic model calibration, Briefings in Bioinformatics, 2021, https://doi.org/10.1093/bib/bbab387 
 
 Step 1 of the protocol, structural identifiability and observability analysis, is performed in MATLAB. The folder 'step1_structural_identifiability' contains MATLAB Live Scripts that reproduce the results reported in the paper. More details are provided in the README file included in the aforementioned folder.
 
@@ -84,6 +85,3 @@ pip3 install -r requirements.txt
   1. go to the `notebooks` directory of your local copy of this repository in your terminal; then
   2. launch a notebook server with `jupyter-notebook`; then
   3. a webpage should open in your web browser with a link to the notebook.
-
-# TODO
-- update link to the paper (currently arxiv)
