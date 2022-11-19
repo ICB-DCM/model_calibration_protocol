@@ -37,7 +37,7 @@ jupyter-server==1.23.2
 jupyterlab-pygments==0.2.2
 kiwisolver==1.4.4
 MarkupSafe==2.1.1
-matplotlib==3.6.2
+matplotlib==3.6.0
 matplotlib-inline==0.1.6
 mistune==2.0.4
 more-itertools==9.0.0
