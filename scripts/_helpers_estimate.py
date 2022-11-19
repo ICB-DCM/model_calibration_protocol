@@ -2,7 +2,7 @@ from typing import Sequence
 
 import numpy as np
 import pypesto
-from pypesto.objective.constants import (
+from pypesto.C import (
     FVAL,
     X,
 )

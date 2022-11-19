@@ -2,7 +2,7 @@ from functools import partial
 
 import dill
 import numpy as np
-from pypesto.predict.constants import AMICI_STATUS, AMICI_T, AMICI_X, AMICI_Y
+from pypesto.C import AMICI_STATUS, AMICI_T, AMICI_X, AMICI_Y
 from pypesto.predict import AmiciPredictor
 
 from _helpers_paths import (

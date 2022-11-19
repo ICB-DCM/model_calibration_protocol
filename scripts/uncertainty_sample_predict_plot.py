@@ -1,7 +1,7 @@
 from pathlib import Path
 
 import matplotlib.pyplot as plt
-from pypesto.predict.constants import OUTPUT
+from pypesto.C import OUTPUT
 import pypesto.visualize
 from pypesto.visualize.sampling import _get_condition_and_output_ids
 

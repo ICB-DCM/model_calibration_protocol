@@ -1,6 +1,6 @@
 import dill
-from pypesto.ensemble import Ensemble, EnsembleType
-from pypesto.predict.constants import AMICI_X, AMICI_Y
+from pypesto.ensemble import Ensemble
+from pypesto.C import AMICI_X, AMICI_Y, EnsembleType
 
 from _helpers import (
     engine,
