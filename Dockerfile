@@ -24,4 +24,5 @@ RUN git clone --recurse-submodules https://github.com/ICB-DCM/model_calibration_
 # Setup the Python environment.
 RUN echo 'export PATH=/home/user/.local/bin:$PATH' >> /home/user/.bashrc
 ENV PATH="/home/user/.local/bin:$PATH"
+RUN pip3 install pip==22.3.1 setuptools==65.5.1 wheel==0.38.4
 RUN pip3 install -r model_calibration_protocol/requirements.txt
