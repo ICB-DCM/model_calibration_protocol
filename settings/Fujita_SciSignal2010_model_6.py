@@ -73,10 +73,11 @@ optimizers = {
         'name': 'Fides 2D Hybrid',
         'optimizer':
             pypesto.optimize.FidesOptimizer(
-                hessian_update=fides.HybridUpdate(),
+                hessian_update=fides.HybridFixed(happ=fides.BFGS()),
                 options={
                     fides.Options.SUBSPACE_DIM: fides.SubSpaceDim.TWO,
                 },
+                verbose=0,
             ),
         'n_starts': 1000,
         'color': 'indigo',
